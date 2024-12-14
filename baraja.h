@@ -10,6 +10,10 @@
 #define BASTOS  2
 #define COPAS  3
 
+void crear_baraja()
+
+void crear
+
 
 
 
