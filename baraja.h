@@ -12,14 +12,9 @@
 
 void crear_baraja()
 
-void crear
+void crear_carta()
 
-
-
-
-
-
-
+void print_baraja()
 
 #endif 
 
