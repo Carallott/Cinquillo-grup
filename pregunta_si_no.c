@@ -9,4 +9,6 @@ int pregunta_si_no(char pregunta){
   }
   else{
       return 0;
+  }
+}
 
