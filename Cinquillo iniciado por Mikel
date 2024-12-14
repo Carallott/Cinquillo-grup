@@ -1,0 +1,103 @@
+//Librerías
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+#include "colores.h"  
+#include "azar.h"    // Para generar números aleatorios
+#include "duerme.h"  // Para gestionar pausas 
+
+
+//Structs
+
+#define NUM_PALOS 4 
+#define MAX_CARTAS_JUGADOR 10     
+#define NUM_JUGADORES 4
+#define NUM_CARTAS_MAZO 40
+#define MAX_CARACTERES_PALO 10
+
+typedef struct {
+    int numero;  
+    char palo;   // 'O' = Oros, 'C' = Copas, 'E' = Espadas, 'B' = Bastos
+} Carta;
+
+
+typedef struct {
+    Carta cartas[MAX_CARTAS_JUGADOR];  // Cartas en la mano del jugador
+    int num_cartas;                   
+} Jugador;
+
+
+typedef struct {
+    int extremos[NUM_PALOS][2];  // Para cada palo, [0] es el extremo inferior, [1] es el extremo superior
+} Tablero;
+
+
+typedef struct {
+    Carta cartas[NUM_CARTAS_MAZO];  // Cartas del mazo
+} Mazo;
+
+
+//Funciones auxiliares
+
+
+void iniciar_juego(Jugador jugadores[], int num_jugadores, Tablero *tablero);
+void mezclar_mazo(Mazo *mazo);
+void repartir_cartas(Mazo *mazo, Jugador jugadores[], int num_jugadores);
+bool es_jugada_valida(Carta carta, Tablero tablero);
+void posibles_tiradas(Jugador jugador, Tablero tablero, Carta tiradas[], int *num_tiradas);
+void actualizar_tablero(Carta carta, Tablero *tablero);
+void mostrar_mano_jugador(Jugador jugador);
+void mostrar_tablero(Tablero tablero);
+void jugar_cinquillo(int num_jugadores);
+bool hay_cartas_validas(Jugador jugador, Tablero tablero);
+bool hay_ganador(Jugador jugadores[], int num_jugadores);
+
+
+//Funcion principal
+
+int main() {
+
+int num_jugadores = NUM_JUGADORES;
+    jugar_cinquillo(num_jugadores);
+    return 0;   
+}
+
+//Implementación funciones auxiliares
+
+void iniciar_juego(Jugador jugadores[], int num_jugadores, Tablero *tablero, Mazo *mazo) {
+
+}
+
+void mezclar_mazo(Mazo *mazo) {
+
+}
+
+void repartir_cartas(Mazo *mazo, Jugador jugadores[], int num_jugadores) {
+
+}
+
+bool es_jugada_valida(Carta carta, Tablero tablero) {
+
+}
+
+void mostrar_mano_jugador(Jugador jugador) {
+Sí
+}
+
+void mostrar_tablero(Tablero tablero) {
+Sí
+}
+
+bool hay_cartas_validas(Jugador jugador, Tablero tablero) {
+
+}
+
+bool hay_ganador(Jugador jugadores[], int num_jugadores) {
+SÍ
+}
+
+void jugar_cinquillo(int num_jugadores) {
+
+}
+
