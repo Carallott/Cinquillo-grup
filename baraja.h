@@ -1,3 +1,5 @@
+#indef baraja.h_h
+#define baraja.h
 #include <stdio.h>
 
 #define NUM  10
@@ -8,6 +10,15 @@
 #define BASTOS  2
 #define COPAS  3
 
-typedef struct(){
+
+
+
+
+
+
+
+#endif 
+
+
 
 
