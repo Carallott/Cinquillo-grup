@@ -82,11 +82,11 @@ bool es_jugada_valida(Carta carta, Tablero tablero) {
 }
 
 void mostrar_mano_jugador(Jugador jugador) {
-Sí
+
 }
 
 void mostrar_tablero(Tablero tablero) {
-Sí
+
 }
 
 bool hay_cartas_validas(Jugador jugador, Tablero tablero) {
@@ -94,7 +94,7 @@ bool hay_cartas_validas(Jugador jugador, Tablero tablero) {
 }
 
 bool hay_ganador(Jugador jugadores[], int num_jugadores) {
-SÍ
+
 }
 
 void jugar_cinquillo(int num_jugadores) {
