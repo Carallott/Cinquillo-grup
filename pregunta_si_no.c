@@ -7,7 +7,7 @@ int pregunta_si_no(char pregunta){
   if(pregunta == 's' || pregunta == 'S'){
       return 1;
   }
-  else{
+  else if(pregunta == 'n' || pregunta == 'N'){
       return 0;
   }
 }
