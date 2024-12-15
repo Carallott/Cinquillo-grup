@@ -1,0 +1,15 @@
+src/
+├── cinquillo.c       // Archivo principal (contiene el main)
+├── tablero.c         // Funciones del tablero
+├── tablero.h
+├── mazo.c            // Funciones del mazo
+├── mazo.h
+├── jugador.c         // Funciones relacionadas con los jugadores
+├── jugador.h
+├── juego.c           // Flujo principal del juego
+├── juego.h
+├── colores.h         // Definición de colores (diferenciar palos)
+├── azar.h            // Generación de números aleatorios
+├── duerme.h          // Pausas y control de tiempo
+
+
