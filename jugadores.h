@@ -5,8 +5,7 @@
 	typedef struct {
 		int JUG[J][MAX];
 	} tjug;
-void imprimir_jugador (int n) {
-	printf("JUG#%d:  ", n);
-	}
+asignar_cartas();
+	
 #endif
 
