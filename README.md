@@ -3,11 +3,17 @@
 
 fitxero.h a hacer:
 
-1) baraja
+1) baraja  --> OK
 2) jugadores
-3) pregunta si o no
-4) mantel
+3) preguntar --> OK
+4) mantel = tablero
 5) partida
+6) mano --> OK
+
+
+
+
+
 
 Iniciar un .h:
 #ifndef NOMBRE_H
