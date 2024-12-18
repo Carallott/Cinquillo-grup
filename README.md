@@ -1,6 +1,8 @@
 # Cinquillo-grup
 
 
+ha habido cambios en el readme 
+
 fitxero.h a hacer:
 
 1) baraja  --> OK
