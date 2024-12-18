@@ -1,23 +1,17 @@
-#indef baraja.h_h
-#define baraja.h
+#ifndef BARAJA_H
+#define BARAJA_H
+
 #include <stdio.h>
+#include "carta.h"
 
-#define NUM  10
-#define PALO  4
-#define CARTAS  (NUM*PALO) //definido de esta manera para que se pueda cambiar sin tocar el còdigo
-#define OROS  0
-#define ESPADAS  1
-#define BASTOS  2
-#define COPAS  3
+#define NUMERO_CARTES 10
+#define NUMERO_PALOS 4
+#define TOTAL_CARTAS (NUMERO_CARTES * NUMERO_PALOS)
 
-void crear_baraja()
+// Creació tipus per a la baraja
+typedef t_carta t_baraja[TOTAL_CARTAS];
 
-void crear_carta()
+void inicialitzacio_baraja(t_baraja baraja);
+void imprimir_baraja(t_baraja baraja);
 
-void print_baraja()
-
-#endif 
-
-
-
-
+#endif // BARAJA_H
