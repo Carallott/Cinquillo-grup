@@ -18,3 +18,16 @@ void iniciar_cartas(t_carta *p_c) {
 		} else p_c[i].carac.car='M';
 		}
 }	  
+void asignar_cartas (t_carta *p_c) {
+	int cont[4]={0};
+	int i,x;
+	printf("asignar\n");
+	for(i=0;i<MAX;i++) {
+		x=numero_al_azar(4);
+		cont[x]++;
+		if (cont[x]<=10) {
+		p_c[i].carac.jug=x;
+		
+	}	else i=i -1;
+	}
+	}
