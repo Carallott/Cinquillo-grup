@@ -44,6 +44,6 @@ int main(){
     int continuar = preguntar_2_opciones("¿Quieres continuar?");
     printf("continuar: %d\n", continuar);
 
-    int elige_una_carta = preguntar_multiples_opciones("Elige una carta? ", 3);
+    int elige_una_carta = preguntar_multiples_opciones("Elige una opción? ", 3);
     printf("elige_una_carta: %d\n", elige_una_carta);
 }
