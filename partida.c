@@ -1,3 +1,4 @@
+#include "partida.h"
 typedef struct {
 	int val;
 } t_jugada; 
