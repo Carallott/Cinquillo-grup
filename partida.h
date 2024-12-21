@@ -4,5 +4,5 @@ mover_carta();
 primera_jugada();
 sig_jug();
 play();
-
+ganar();
   #endif
