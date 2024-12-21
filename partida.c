@@ -45,6 +45,6 @@ int play (int i, t_carac *p_c) {
 		}
 	} 
 	}
-		scanf("%d", &x);
+		scanf("%d", &x); // esto es solo si hay un jugador humano, hiria dentro de un if, y falta pregunta incial
 		return p[x].val;
 }	
