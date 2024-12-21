@@ -1,11 +1,3 @@
-typedef struct { 
-  int jug
-  char car [(J)ugable (T)ablero (M)ano]
-} t_carac
-typedef struct {
-  t_carac carac
-  int carta[40] //inicialiazar carta[1]=1 y progresivamente
-} t_carta
 
 
 
