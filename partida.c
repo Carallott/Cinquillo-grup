@@ -143,7 +143,10 @@ int main()
     do
     {
 	jugador_humano = preguntar_2_opciones("¿ Hay algun jugador humano ?");
-	printf("Opción introducida invalida. ");
+	if (jugador_humano == -1)
+	{
+		printf("Opción introducida invalida. ");
+	}
     } while (jugador_humano == -1); 
 
     t_lista_jugadores jugadores;
@@ -160,7 +163,10 @@ int main()
     do
     {
 	ver_todas_las_cartas = preguntar_2_opciones("¿ Quieres ver todas las cartas ?");
-	printf("Opción introducida invalida. ");
+	if (ver_todas_las_cartas == -1)
+	{
+		printf("Opción introducida invalida. ");
+	}
     } while (ver_todas_las_cartas == -1);
 
     repartir_todas_las_cartas(jugadores, &baraja);
