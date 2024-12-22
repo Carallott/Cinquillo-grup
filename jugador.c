@@ -2,8 +2,8 @@
 
 void imprimir_cartas_jugables(t_jugador jugador, t_mantel mantel)
 {
-    int ideex_carta_en_mano = 0;
-    for (index_carta_en_mano = 0; index_carta_en_mano < MAX_CARTAS_EN_MANO; index_carta_en_mano++)
+    //int dentro del for para no tener que escribir una linea de mas.
+    for (int index_carta_en_mano = 0; index_carta_en_mano < MAX_CARTAS_EN_MANO; index_carta_en_mano++)
     {
         if (jugador.mano[index_carta_en_mano].palo != PALO_CARTA_VACIA && es_jugable(mantel, jugador.mano[index_carta_en_mano]))
         {
