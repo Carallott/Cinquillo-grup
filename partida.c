@@ -139,7 +139,12 @@ int main()
 
     inicializar_azar();
 
-    int jugador_humano = preguntar_2_opciones("¿ Hay algun jugador humano ?");
+    int jugador_humano;
+    do
+    {
+	jugador_humano = preguntar_2_opciones("¿ Hay algun jugador humano ?");
+	printf("Opción introducida invalida. ");
+    } while (jugador_humano == -1); 
 
     t_lista_jugadores jugadores;
 
@@ -151,7 +156,12 @@ int main()
 
     iniciar_jugadores(jugadores, jugador_humano_azar);
 
-    int ver_todas_las_cartas = preguntar_2_opciones("¿ Quieres ver todas las cartas ?");
+    int ver_todas_las_cartas;
+    do
+    {
+	ver_todas_las_cartas = preguntar_2_opciones("¿ Quieres ver todas las cartas ?");
+	printf("Opción introducida invalida. ");
+    } while (ver_todas_las_cartas == -1);
 
     repartir_todas_las_cartas(jugadores, &baraja);
 
