@@ -6,14 +6,24 @@ void inicialitzacio_baraja(t_baraja baraja)
     int palo, valor_carta;
 
     // Iteramos por los palos
-    for (palo = 0; palo < NUMERO_PALOS; palo++)
+    for (palo = COPAS; palo <= ESPADAS; palo++)
     {
         for (valor_carta = 0; valor_carta < NUMERO_CARTES; valor_carta++)
         {
-            int index_carta = (palo * NUMERO_CARTES) + valor_carta;
+            int index_carta = ((palo -1) * NUMERO_CARTES) + valor_carta;
 
             baraja[index_carta].palo = palo;
             baraja[index_carta].valor = valor_carta + 1; // Comienza desde 1
+
+            if (es_cinco_de_oros(baraja[index_carta]))
+            {
+                // El cinco de oros es la unica carta de la baraja que empieza siendo jugable
+                baraja[index_carta].estado = 1;
+            }
+            else
+            {
+                baraja[index_carta].estado = 0;
+            }
         }
     }
 }

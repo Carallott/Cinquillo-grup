@@ -5,12 +5,13 @@
 #include "colores.h"
 
 // Definims un tipus enum per a les palos de les cartes
+// Ordenat aixi per que els colors siguin el mateix ordre
 typedef enum
 {
-    COPAS = 0,
-    BASTOS = 1,
-    OROS = 2,
-    ESPADAS = 3
+    COPAS = 1,
+    BASTOS = 2,
+    OROS = 3,
+    ESPADAS = 4,
 } enum_palo;
 
 // Estructura per a la carta : {enum_palo palo, int valor}
@@ -18,10 +19,13 @@ typedef struct
 {
     enum_palo palo;
     int valor;
+    char estado; // no jugada: 0, jugable: 1, jugada: 2
 } t_carta;
 
 char *sufijo_palo(enum_palo palo);
 char *necesita_espacio(int valor_carta);
 void imprimir_carta(t_carta carta);
+void imprimir_carta_casilla(t_carta carta);
+int es_cinco_de_oros(t_carta carta);
 
 #endif // CARTA_H

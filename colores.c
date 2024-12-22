@@ -16,6 +16,9 @@
 #define ANSI_COLOR_CYAN    "\x1b[36m"
 #define ANSI_COLOR_WHITE   "\x1b[37m"
 
+
+
+
 void printf_color_num(int num) {
 	switch (num % 14) {
 		case  0: printf(ANSI_COLOR_BOLD   ); printf(ANSI_COLOR_WHITE  ); break;

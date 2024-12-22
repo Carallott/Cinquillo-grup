@@ -10,6 +10,7 @@
 
 #define PALO_CARTA_VACIA -1
 #define VALOR_CARTA_VACIA -1
+#define ESTADO_CARTA_VACIA -1
 
 // Estructura per a la mano
 typedef t_carta t_mano[MAX_CARTAS_EN_MANO];

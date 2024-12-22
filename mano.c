@@ -8,6 +8,7 @@ void iniciar_mano_vacia(t_mano mano)
     {
         mano[index_carta_en_mano].palo = PALO_CARTA_VACIA;
         mano[index_carta_en_mano].valor = VALOR_CARTA_VACIA;
+        mano[index_carta_en_mano].estado = ESTADO_CARTA_VACIA;
     }
 }
 
@@ -22,11 +23,12 @@ int repartir_carta(t_mano mano, t_carta carta)
         {
             mano[index_carta_en_mano].palo = carta.palo;
             mano[index_carta_en_mano].valor = carta.valor;
+            mano[index_carta_en_mano].estado = carta.estado;
             return 1;
         }
     }
 
-    printf("La mano ya esta llena ! ");
+    printf("La mano ya esta llena ! \n");
     return -1;
 }
 
@@ -34,6 +36,7 @@ void borrar_carta_de_la_mano(t_mano mano, int index_carta)
 {
     mano[index_carta].palo = PALO_CARTA_VACIA;
     mano[index_carta].valor = VALOR_CARTA_VACIA;
+    mano[index_carta].estado = ESTADO_CARTA_VACIA;
 }
 
 void imprimir_mano(t_mano mano)
@@ -47,22 +50,24 @@ void imprimir_mano(t_mano mano)
             imprimir_carta(mano[index_carta_en_mano]);
         }
     }
+
+    printf("\n");
 }
 
 
 int main()
 {
-    t_carta carta1 = {0, 1};
-    t_carta carta2 = {1, 2};
-    t_carta carta3 = {2, 3};
-    t_carta carta4 = {3, 4};
-    t_carta carta5 = {0, 5};
-    t_carta carta6 = {1, 6};
-    t_carta carta7 = {2, 7};
-    t_carta carta8 = {3, 8};
-    t_carta carta9 = {2, 9};
-    t_carta carta10 = {0, 10};
-    t_carta carta11 = {1, 10};  
+    t_carta carta1 = {1, 1, 0};
+    t_carta carta2 = {1, 2, 0};
+    t_carta carta3 = {2, 3, 0};
+    t_carta carta4 = {3, 4, 0};
+    t_carta carta5 = {4, 5, 0};
+    t_carta carta6 = {1, 6, 0};
+    t_carta carta7 = {2, 7, 0};
+    t_carta carta8 = {3, 8, 0};
+    t_carta carta9 = {2, 9, 0};
+    t_carta carta10 = {4, 10, 0};
+    t_carta carta11 = {1, 10, 0};  
 
     t_mano mano;
     iniciar_mano_vacia(mano);
