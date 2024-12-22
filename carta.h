@@ -9,7 +9,7 @@
 #define ESTADO_CARTA_VACIA -1
 
 // Definims un tipus enum per a les palos de les cartes
-// Ordenat aixi per que els colors siguin el mateix ordre
+// Ordenat aixi perque els colors segueixin el mateix ordre
 typedef enum
 {
     COPAS = 1,
@@ -18,7 +18,7 @@ typedef enum
     ESPADAS = 4,
 } enum_palo;
 
-// Estructura per a la carta : {enum_palo palo, int valor}
+// Estructura per a la carta : {enum_palo palo, int valor, int estado}
 typedef struct
 {
     enum_palo palo;
