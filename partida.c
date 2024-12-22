@@ -89,7 +89,7 @@ void turno_jugadores(t_lista_jugadores jugadores, t_mantel *mantel, int ver_toda
     for (index_jugador = 0; index_jugador < MAX_JUGADORES; index_jugador++)
     {
         imprimir_estado_jugadores(jugadores, ver_todas_las_cartas);
-        turno_jugador(&jugadores[index_jugador], mantel); // Pass jugador as a pointer
+        turno_jugador(&jugadores[index_jugador], mantel); // Passa jugador como pointer
         duerme_un_rato();
 
 		int i;
