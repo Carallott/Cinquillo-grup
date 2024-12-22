@@ -32,6 +32,13 @@ void imprimir_carta(t_carta carta)
     printf_reset_color();
 }
 
+void imprimir_carta_oculta()
+{
+    printf_color_negrita();
+    printf("[? ?]");
+    printf_reset_color();
+}
+
 void imprimir_carta_casilla(t_carta carta)
 {
     if (carta.estado == 0 || carta.estado == 1)
@@ -46,7 +53,7 @@ void imprimir_carta_casilla(t_carta carta)
 
 int es_cinco_de_oros(t_carta carta)
 {
-    if (carta.palo == OROS && carta.valor == 5)
+    if (carta.palo == OROS - 1 && carta.valor == 5)
     {
         return 1;
     }

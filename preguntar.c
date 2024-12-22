@@ -21,29 +21,31 @@ int preguntar_2_opciones(char *pregunta)
         return -1;
     }
 }
-
 int preguntar_multiples_opciones(char *pregunta, int numero_opciones)
 {
-    char respuesta;
     int opcion;
+    char c; // necesation para limpiar la pila
 
-    printf("%s (0-%d): ", pregunta, numero_opciones - 1);
-    scanf(" %d", &opcion);
+    if (numero_opciones == 1)
+    {
+        printf("%s (1): ", pregunta);
+    }
+    else
+    {
+        printf("%s (1-%d): ", pregunta, numero_opciones);
+    }
 
-    if (opcion >= 0 && opcion < numero_opciones)
+    int result = scanf("%d", &opcion);
+
+    while ((c = getchar()) != '\n' && c != EOF); // limpia la pila si hay una letra dentro
+
+    if (result == 1 && opcion >= 1 && opcion <= numero_opciones)
     {
         return opcion;
     }
     else
     {
+        printf("Opcion introducida invalida. ");
         return -1;
     }
-}
-
-int main(){
-    int continuar = preguntar_2_opciones("¿Quieres continuar?");
-    printf("continuar: %d\n", continuar);
-
-    int elige_una_carta = preguntar_multiples_opciones("Elige una carta? ", 3);
-    printf("elige_una_carta: %d\n", elige_una_carta);
 }

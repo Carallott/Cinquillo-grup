@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include "colores.h"
 
+#define PALO_CARTA_VACIA -1
+#define VALOR_CARTA_VACIA -1
+#define ESTADO_CARTA_VACIA -1
+
 // Definims un tipus enum per a les palos de les cartes
 // Ordenat aixi per que els colors siguin el mateix ordre
 typedef enum
@@ -26,6 +30,7 @@ char *sufijo_palo(enum_palo palo);
 char *necesita_espacio(int valor_carta);
 void imprimir_carta(t_carta carta);
 void imprimir_carta_casilla(t_carta carta);
+void imprimir_carta_oculta();
 int es_cinco_de_oros(t_carta carta);
 
 #endif // CARTA_H

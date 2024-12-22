@@ -13,5 +13,7 @@ typedef t_carta t_baraja[TOTAL_CARTAS];
 
 void inicialitzacio_baraja(t_baraja baraja);
 void imprimir_baraja(t_baraja baraja);
+void quitar_carta(t_baraja *baraja, int index_carta); // borrar carta de la baraja
+int baraja_vacia(t_baraja baraja);
 
 #endif // BARAJA_H

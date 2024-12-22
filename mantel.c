@@ -126,38 +126,3 @@ int es_jugable(t_mantel mantel, t_carta carta)
 
     return 0;
 }
-
-int main()
-{
-    t_mantel mantel;
-    iniciar_mantel(&mantel);
-    imprimir_mantel(mantel);
-
-    int cinco_jugable = es_jugable(mantel, mantel.casillas[5][OROS - 1].carta);
-    int tres_jugable = es_jugable(mantel, mantel.casillas[3][OROS - 1].carta);
-
-    printf("cinco_jugable: %d\n", cinco_jugable);
-    printf("tres_jugable: %d\n", tres_jugable);
-
-    jugar_carta(&mantel, mantel.casillas[5][OROS - 1].carta);
-    imprimir_mantel(mantel);
-
-    int cinco_copas_jugable = es_jugable(mantel, mantel.casillas[5][COPAS - 1].carta);
-    int cinco_bastos_jugable = es_jugable(mantel, mantel.casillas[5][BASTOS - 1].carta);
-    int cinco_espadas_jugable = es_jugable(mantel, mantel.casillas[5][ESPADAS - 1].carta);
-
-    int seis_oros_jugable = es_jugable(mantel, mantel.casillas[4][OROS - 1].carta);
-    int cuatro_oros_jugable = es_jugable(mantel, mantel.casillas[6][OROS - 1].carta);
-    int cuatro_bastos_jugable = es_jugable(mantel, mantel.casillas[4][BASTOS - 1].carta);
-
-    printf("cinco_copas_jugable: %d\n", cinco_copas_jugable);
-    printf("cinco_bastos_jugable: %d\n", cinco_bastos_jugable);
-    printf("cinco_espadas_jugable: %d\n", cinco_espadas_jugable);
-    printf("seis_oros_jugable: %d\n", seis_oros_jugable);
-    printf("cuatro_oros_jugable: %d\n", cuatro_oros_jugable);
-    printf("cuatro_bastos_jugable: %d\n", cuatro_bastos_jugable);
-
-    jugar_carta(&mantel, mantel.casillas[6][OROS - 1].carta);
-    jugar_carta(&mantel, mantel.casillas[5][ESPADAS - 1].carta);
-    imprimir_mantel(mantel);
-}
