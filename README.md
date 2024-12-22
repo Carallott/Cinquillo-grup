@@ -26,11 +26,12 @@
 ├── preguntar.h // S'emcarrega de fer les preguntes.
 ├── repartir.c   
 ├── repartir.h  // S'emcarrega de les funcions relacionades a la repartició de les cartes.
- 
+ ```
+
 Per a compilar el codi:
 gcc partida.c preguntar.c baraja.c mantel.c mano.c jugador.c carta.c colores.c azar.c repartir.c duerme.c -o partida
 
 Per a ejecutar el cocdi:
 ./partida
 
-```
+
