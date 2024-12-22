@@ -2,7 +2,7 @@
 
 És el joc del cinquillo, aquesta carpeta està dividida en:
 
-.
+```
 ├── azar.c   
 ├── azar.h      // Arxiu donat pel professor. Dona un número al atzar.
 ├── baraja.c 
@@ -32,3 +32,5 @@ gcc partida.c preguntar.c baraja.c mantel.c mano.c jugador.c carta.c colores.c a
 
 Per a ejecutar el cocdi:
 ./partida
+
+```
