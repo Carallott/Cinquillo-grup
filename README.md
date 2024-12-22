@@ -14,18 +14,18 @@
 ├── duerme.c
 ├── duerme.h    // Arxiu donat pel professor. Dona el temps de rest entre jugades.
 ├── jugador.c
-├── jugador.h   // S'emcarrega de les funcions relacionades al jugador.
+├── jugador.h   // S'encarrega de les funcions relacionades al jugador.
 ├── jugadores.h // Inicialitza la llista de jugadors.
 ├── mano.c   
-├── mano.h      // S'emcarrega de les funcions relacionades a la mà del jugador.
+├── mano.h      // S'encarrega de les funcions relacionades a la mà del jugador.
 ├── mantel.c   
-├── mantel.h    // S'emcarrega de les funcions relacionades a la gestió del mantell.
+├── mantel.h    // S'encarrega de les funcions relacionades a la gestió del mantell.
 ├── partida.c   
 ├── partida.h   // Main de la ejecució.
 ├── preguntar.c   
-├── preguntar.h // S'emcarrega de fer les preguntes.
+├── preguntar.h // S'encarrega de fer les preguntes.
 ├── repartir.c   
-├── repartir.h  // S'emcarrega de les funcions relacionades a la repartició de les cartes.
+├── repartir.h  // S'encarrega de les funcions relacionades a la repartició de les cartes.
  ```
 
 Per a compilar el codi:
